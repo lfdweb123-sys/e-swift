@@ -1,0 +1,39 @@
+<svg viewBox="0 0 480 480" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Illustration d'un réseau de personnes connectées, symbolisant la communauté E-SWIFT">
+  <defs>
+    <linearGradient id="g1" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#8B5CF6"/>
+      <stop offset="100%" stop-color="#C81DB0"/>
+    </linearGradient>
+    <linearGradient id="g2" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#A855F7"/>
+      <stop offset="100%" stop-color="#8B5CF6"/>
+    </linearGradient>
+  </defs>
+  <circle cx="240" cy="240" r="200" fill="rgba(255,255,255,.04)"/>
+  <circle cx="240" cy="240" r="150" fill="rgba(255,255,255,.05)"/>
+  <!-- connecting lines -->
+  <g stroke="rgba(255,255,255,.35)" stroke-width="2">
+    <line x1="240" y1="240" x2="150" y2="150"/>
+    <line x1="240" y1="240" x2="340" y2="140"/>
+    <line x1="240" y1="240" x2="120" y2="300"/>
+    <line x1="240" y1="240" x2="350" y2="320"/>
+    <line x1="240" y1="240" x2="240" y2="360"/>
+  </g>
+  <!-- central node (E-SWIFT) -->
+  <circle cx="240" cy="240" r="46" fill="url(#g1)"/>
+  <text x="240" y="252" font-family="Unbounded, sans-serif" font-weight="700" font-size="26" fill="#fff" text-anchor="middle">E</text>
+  <!-- satellite nodes (members / partners) -->
+  <circle cx="150" cy="150" r="26" fill="url(#g2)"/>
+  <circle cx="340" cy="140" r="22" fill="url(#g2)"/>
+  <circle cx="120" cy="300" r="20" fill="url(#g2)"/>
+  <circle cx="350" cy="320" r="26" fill="url(#g2)"/>
+  <circle cx="240" cy="360" r="18" fill="url(#g2)"/>
+  <!-- simple person glyphs inside satellite nodes -->
+  <g fill="#fff" opacity=".95">
+    <circle cx="150" cy="142" r="6"/><path d="M138 162c2-8 8-12 12-12s10 4 12 12z"/>
+    <circle cx="340" cy="133" r="5"/><path d="M330 150c2-7 6-10 10-10s8 3 10 10z"/>
+    <circle cx="120" cy="294" r="5"/><path d="M111 310c2-6 5-9 9-9s7 3 9 9z"/>
+    <circle cx="350" cy="312" r="6"/><path d="M338 332c2-8 8-12 12-12s10 4 12 12z"/>
+    <circle cx="240" cy="355" r="4"/><path d="M233 368c1.5-5 4-7 7-7s5.5 2 7 7z"/>
+  </g>
+</svg>

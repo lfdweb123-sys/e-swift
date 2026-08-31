@@ -386,8 +386,8 @@ body.nav-open .nav-mobile{ display: flex; }
   font-size: .72rem;
 }
 .hero h1{
-  font-size: clamp(2rem, 3.2vw, 3rem);
-  margin-bottom: 22px;
+  font-size: clamp(1.7rem, 2.6vw, 2.4rem);
+  margin-bottom: 20px;
   color: #fff;
 }
 .hero h1 em{
@@ -470,11 +470,34 @@ body.nav-open .nav-mobile{ display: flex; }
   padding: 64px 0 88px;
 }
 .page-hero .eyebrow{ color: #C9A6FF; }
-.page-hero h1{ font-size: clamp(2.1rem, 3.4vw, 3rem); max-width: 780px; }
+.page-hero h1{ font-size: clamp(2.1rem, 3.4vw, 3rem); max-width: 780px; color: #fff; }
 .page-hero p{ color: var(--text-on-dark-muted); font-size: 1.08rem; max-width: 620px; margin:0; }
 .page-hero-crumb{ font-size: .85rem; color: var(--text-on-dark-muted); margin-bottom: 18px; display:flex; gap:8px; align-items:center; }
 .page-hero-crumb a:hover{ color:#fff; }
 .page-hero-crumb svg{ width: 12px; height: 12px; flex: none; }
+
+.page-hero-grid{
+  display: grid;
+  grid-template-columns: 1.15fr .85fr;
+  gap: 48px;
+  align-items: center;
+}
+.page-hero-media{
+  border-radius: var(--radius-l);
+  overflow: hidden;
+  border: 1px solid rgba(255,255,255,.14);
+  aspect-ratio: 4 / 3.2;
+  background: rgba(255,255,255,.04);
+}
+.page-hero-media img, .page-hero-media svg{
+  width: 100%; height: 100%;
+  object-fit: cover;
+  display: block;
+}
+@media (max-width: 860px){
+  .page-hero-grid{ grid-template-columns: 1fr; }
+  .page-hero-media{ order: -1; aspect-ratio: 16/9; }
+}
 
 /* =========================================================
    CARDS / GRIDS
@@ -745,7 +768,7 @@ tbody tr:nth-child(even){ background: var(--paper-tint); }
   position:relative;
   overflow:hidden;
 }
-.cta-band h3{ font-size: clamp(1.5rem,2.6vw,2.1rem); max-width: 480px; margin-bottom:10px; }
+.cta-band h3{ font-size: clamp(1.5rem,2.6vw,2.1rem); max-width: 480px; margin-bottom:10px; color: #fff; }
 .cta-band p{ color: var(--text-on-dark-muted); margin:0; max-width: 460px; }
 .cta-actions{ display:flex; gap:14px; flex-wrap:wrap; }
 
