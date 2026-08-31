@@ -354,12 +354,23 @@ body.nav-open .nav-mobile{ display: flex; }
   padding-top: 26px;
   font-size: .85rem;
 }
+.footer-credit{
+  margin-top: 14px;
+  padding-top: 14px;
+  border-top: 1px solid rgba(255,255,255,.08);
+  font-size: .82rem;
+  color: var(--text-on-dark-muted);
+}
+.footer-credit a{ color: #C9A6FF; font-weight: 600; }
+.footer-credit a:hover{ color: #fff; }
 
 @media (max-width: 860px){
   .footer-grid{ grid-template-columns: 1fr 1fr; }
 }
 @media (max-width: 560px){
   .footer-grid{ grid-template-columns: 1fr; gap: 32px; }
+  /* Sur mobile, la citation doit apparaître au-dessus du copyright */
+  .footer-bottom{ flex-direction: column-reverse; align-items: flex-start; gap: 8px; }
 }
 
 /* =========================================================
@@ -406,6 +417,9 @@ body.nav-open .nav-mobile{ display: flex; }
   padding: 3px 11px;
   font-family:'Unbounded',sans-serif;
   font-size: .72rem;
+}
+@media (max-width: 620px){
+  .hero-kicker{ display: none; }
 }
 .hero h1{
   font-size: clamp(1.6rem, 2.3vw, 2.15rem);
