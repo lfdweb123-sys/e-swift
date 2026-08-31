@@ -54,20 +54,39 @@
         <h1>Ensemble, construisons la <em>génération numérique</em> du Bénin</h1>
         <p class="hero-lede">E-SWIFT est le réseau national qui rassemble les jeunes béninois autour du numérique : formation, mentorat, réseautage et accès à l'emploi, dans les 12 départements du pays.</p>
         <div class="hero-cta">
-          <a href="/rejoindre/" class="btn btn-primary">Devenir membre <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
-          <a href="/a-propos/" class="btn btn-on-dark">Découvrir l'association</a>
+          <button type="button" class="btn btn-primary" data-hero-tab="membre" aria-pressed="true">Devenir membre <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></button>
+          <button type="button" class="btn btn-on-dark" data-hero-tab="association" aria-pressed="false">Découvrir l'association</button>
         </div>
-        <p class="hero-quote">« Quel que soit ton département au Bénin, tu dois pouvoir accéder aux opportunités du numérique. »<br><strong>— Vision fondatrice d'E-SWIFT</strong></p>
+        <p class="hero-quote">« Quel que soit ton département au Bénin, tu dois pouvoir accéder aux opportunités du numérique. »<br><strong>— VISION FONDATRICE D'E-SWIFT</strong></p>
       </div>
       <div class="hero-panel reveal">
-        <p class="hero-panel-title">Le réseau en quelques chiffres</p>
-        <div class="hero-stats">
-          <div class="hero-stat"><b>12/12</b><span>Départements couverts</span></div>
-          <div class="hero-stat"><b>100+</b><span>Clubs E-SWIFT déployés</span></div>
-          <div class="hero-stat"><b>10 000+</b><span>Jeunes formés et accompagnés</span></div>
-          <div class="hero-stat"><b>80%</b><span>Taux d'orientation positive</span></div>
+        <div class="hero-panel-view" data-hero-view="membre">
+          <p class="hero-panel-title">Le réseau en quelques chiffres</p>
+          <div class="hero-stats">
+            <div class="hero-stat"><b>12/12</b><span>Départements couverts</span></div>
+            <div class="hero-stat"><b>100+</b><span>Clubs E-SWIFT déployés</span></div>
+            <div class="hero-stat"><b>10 000+</b><span>Jeunes formés et accompagnés</span></div>
+            <div class="hero-stat"><b>80%</b><span>Taux d'orientation positive</span></div>
+          </div>
+          <div class="hero-panel-foot"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-6.2-7-11.5A7 7 0 0119 9.5C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.4"/></svg> Ancrage territorial dans les 12 départements du Bénin</div>
+          <a href="/rejoindre/" class="btn btn-primary btn-block" style="margin-top:20px;">Commencer mon adhésion</a>
         </div>
-        <div class="hero-panel-foot"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-6.2-7-11.5A7 7 0 0119 9.5C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.4"/></svg> Ancrage territorial dans les 12 départements du Bénin</div>
+        <div class="hero-panel-view" data-hero-view="association" hidden>
+          <p class="hero-panel-title">Qui est E-SWIFT ?</p>
+          <div class="hero-assoc-item">
+            <span class="hero-assoc-tag">Identité</span>
+            <p>Le plus grand réseau national de jeunes acteurs du numérique du Bénin.</p>
+          </div>
+          <div class="hero-assoc-item">
+            <span class="hero-assoc-tag">Mission</span>
+            <p>Former, mentorer et connecter la jeunesse aux opportunités du digital.</p>
+          </div>
+          <div class="hero-assoc-item">
+            <span class="hero-assoc-tag">Vision</span>
+            <p>Aucun jeune laissé de côté, quel que soit son département.</p>
+          </div>
+          <a href="/a-propos/" class="btn btn-primary btn-block" style="margin-top:20px;">Découvrir toute notre histoire</a>
+        </div>
       </div>
     </div>
   </div>
@@ -232,6 +251,12 @@
 <button id="back-to-top" class="back-to-top" aria-label="Retour en haut de page">
   <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="19" x2="12" y2="5"/><polyline points="6 11 12 5 18 11"/></svg>
 </button>
+<div id="support-tooltip" class="support-tooltip">
+  <button id="support-tooltip-close" class="support-tooltip-close" aria-label="Fermer la suggestion">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><line x1="5" y1="5" x2="19" y2="19"/><line x1="19" y1="5" x2="5" y2="19"/></svg>
+  </button>
+  Une question sur E-SWIFT ? Discutez avec notre assistant 👋
+</div>
 <button id="support-launcher" class="support-launcher" aria-label="Ouvrir l'assistant du site" aria-expanded="false">
   <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5.5h16a1.5 1.5 0 011.5 1.5v9a1.5 1.5 0 01-1.5 1.5H9l-4.5 4v-4H4A1.5 1.5 0 012.5 16V7A1.5 1.5 0 014 5.5z"/></svg>
 </button>

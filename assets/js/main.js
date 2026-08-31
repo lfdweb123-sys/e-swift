@@ -66,11 +66,27 @@
     revealEls.forEach(function (el) { el.classList.add("is-visible"); });
   }
 
+  // Bascule du panneau hero (accueil) selon le bouton cliqué
+  var heroTabs = document.querySelectorAll("[data-hero-tab]");
+  if (heroTabs.length) {
+    heroTabs.forEach(function (btn) {
+      btn.addEventListener("click", function () {
+        var target = btn.getAttribute("data-hero-tab");
+        heroTabs.forEach(function (b) {
+          b.setAttribute("aria-pressed", b === btn ? "true" : "false");
+        });
+        document.querySelectorAll("[data-hero-view]").forEach(function (view) {
+          view.hidden = view.getAttribute("data-hero-view") !== target;
+        });
+      });
+    });
+  }
+
   // Bouton retour en haut (page d'accueil)
   var backToTop = document.querySelector("#back-to-top");
   if (backToTop) {
     window.addEventListener("scroll", function () {
-      backToTop.classList.toggle("visible", window.scrollY > 480);
+      backToTop.classList.toggle("visible", window.scrollY > 260);
     }, { passive: true });
     backToTop.addEventListener("click", function () {
       window.scrollTo({ top: 0, behavior: "smooth" });
@@ -84,6 +100,25 @@
   var body = document.querySelector("#support-body");
   var form = document.querySelector("#support-form");
   var input = document.querySelector("#support-input");
+  var tooltip = document.querySelector("#support-tooltip");
+  var tooltipClose = document.querySelector("#support-tooltip-close");
+
+  if (launcher && tooltip) {
+    var tooltipSeen = sessionStorage.getItem("eswift-support-tooltip-seen");
+    if (!tooltipSeen) {
+      window.setTimeout(function () {
+        if (!panel.classList.contains("open")) {
+          tooltip.classList.add("visible");
+        }
+      }, 1400);
+    }
+    function dismissTooltip() {
+      tooltip.classList.remove("visible");
+      sessionStorage.setItem("eswift-support-tooltip-seen", "1");
+    }
+    if (tooltipClose) tooltipClose.addEventListener("click", dismissTooltip);
+    launcher.addEventListener("click", dismissTooltip);
+  }
 
   if (launcher && panel && form && input && body) {
     var history = [];
