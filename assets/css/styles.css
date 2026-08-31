@@ -872,8 +872,8 @@ tbody tr:nth-child(even){ background: var(--paper-tint); }
 /* Bouton retour en haut */
 .back-to-top{
   position: fixed;
-  right: 24px;
-  bottom: 92px;
+  left: 24px;
+  bottom: 24px;
   width: 48px; height: 48px;
   border-radius: 50%;
   background: var(--grad-brand);
