@@ -41,6 +41,7 @@
   --ease: cubic-bezier(.22,.61,.36,1);
 
   --container: 1180px;
+  --container-wide: 1440px;
 }
 
 *, *::before, *::after{ box-sizing: border-box; }
@@ -83,6 +84,15 @@ button{ font-family: inherit; }
   max-width: var(--container);
   margin: 0 auto;
   padding: 0 28px;
+}
+/* Le header et le footer utilisent un conteneur plus large : leur contenu
+   (nav, colonnes) doit occuper l'espace sur les très grands écrans plutôt
+   que de laisser des bandes vides de part et d'autre. */
+.site-header .container, .site-footer .container{
+  max-width: var(--container-wide);
+}
+@media (min-width: 1800px){
+  :root{ --container: 1320px; --container-wide: 1680px; }
 }
 
 ::selection{ background: var(--purple); color: #fff; }
@@ -291,7 +301,19 @@ body.nav-open .nav-mobile{ display: flex; }
   background: var(--ink);
   color: var(--text-on-dark-muted);
   padding: 76px 0 28px;
+  position: relative;
+  overflow: hidden;
 }
+.site-footer::before{
+  content: "";
+  position: absolute;
+  top: -180px; left: 50%;
+  transform: translateX(-50%);
+  width: 900px; height: 360px;
+  background: radial-gradient(closest-side, rgba(124,58,237,.16), transparent 70%);
+  pointer-events: none;
+}
+.site-footer .container{ position: relative; z-index: 1; }
 .footer-grid{
   display: grid;
   grid-template-columns: 1.4fr 1fr 1fr 1.1fr;
