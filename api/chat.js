@@ -19,21 +19,51 @@ STRUCTURE DU SITE :
   100+ clubs, 10 000+ jeunes formés, 80% de taux d'orientation positive).
 - À propos (/a-propos/) : signification du nom E-SWIFT (Entrepreneuriat,
   Support, Workforce, Innovation, Formation, Technologie), vision, mission
-  institutionnelle, positionnement stratégique.
+  institutionnelle, objet et seize missions statutaires, cadre juridique
+  (association à but non lucratif, indépendante, apolitique et non
+  confessionnelle, durée illimitée, activités sur tout le territoire du Bénin).
 - Programmes (/programmes/) : les six piliers stratégiques détaillés, le
-  parcours du membre en 8 étapes (Découvrir, Rejoindre, Apprendre, Être
-  accompagné, Se connecter, Agir, Opportunités, Contribuer), l'offre de
-  programmes (E-SWIFT Academy, Mentoring, Network & Events, Entrepreneur Lab,
-  Workforce) et la plateforme numérique.
-- Organisation (/organisation/) : architecture nationale à 4 niveaux (Bureau
-  National, Coordinations Départementales, Clubs E-SWIFT, Membres), postes du
-  Bureau National, gouvernance, fonctionnement des instances.
+  parcours du membre en 8 étapes, l'offre de programmes (E-SWIFT Academy,
+  Mentoring, Network & Events, Entrepreneur Lab, Workforce), les domaines de
+  formation (marketing digital, graphisme, e-commerce, création de contenu,
+  développement web, gestion de projet, négociation commerciale,
+  entrepreneuriat, intelligence artificielle, technologies émergentes,
+  communication), les dispositifs d'accompagnement (mentorat, coaching,
+  accompagnement entrepreneurial et technique, orientation professionnelle,
+  mise en relation avec des experts) et la plateforme numérique.
+- Organisation (/organisation/) : quatre niveaux — Assemblée Générale (organe
+  suprême), Bureau National (organe exécutif), Coordinations Départementales,
+  Clubs E-SWIFT. Le Bureau National compte dix fonctions : Président,
+  Vice-Président, Directeur de Cabinet, Directeur de la Communication,
+  Secrétaire Général et adjoint, Trésorier Général et adjoint, Chargé des
+  Programmes, Chargé des Partenariats. Mandat de 4 ans, renouvelable une seule
+  fois. Une Coordination Départementale compte 5 fonctions (Coordinateur,
+  Secrétaire et adjoint, Trésorier, Chargé des Clubs), nommées par le Bureau
+  National pour 4 ans. Un Club compte 4 fonctions (Responsable, Secrétaire,
+  Trésorier, Chargé des Programmes), nommées pour 4 ans sur proposition de la
+  Coordination Départementale. L'Assemblée Générale ordinaire se réunit au
+  moins une fois par an.
+- Statuts & règlement (/statuts/) : synthèse des Statuts et du Règlement
+  intérieur — catégories de membres (fondateurs, actifs, bienfaiteurs,
+  d'honneur), droits et obligations, ressources et gestion financière
+  (exercice du 1er janvier au 31 décembre), partenariats, utilisation du nom
+  et du logo, discipline (rappel à l'ordre, avertissement, suspension,
+  retrait de responsabilité, exclusion), règlement des conflits, modification
+  des textes et dissolution.
 - Impact (/impact/) : indicateurs clés, chaîne de valeur, écosystème de
   partenariats (Entreprises & Tech, Académique & Écoles, Institutions & ONG),
-  modèle financier associatif, feuille de route.
-- Rejoindre (/rejoindre/) : comment adhérer (6 étapes), devenir ambassadeur
-  (équipe opérationnelle, avec commission sur inscriptions), devenir
-  partenaire, formulaire de contact.
+  modèle financier associatif, gestion financière, critères d'évaluation,
+  feuille de route.
+- Rejoindre (/rejoindre/) : comment adhérer (6 étapes), conditions
+  d'adhésion, devenir ambassadeur (équipe opérationnelle, avec commission sur
+  inscriptions), devenir partenaire, formulaire de contact.
+
+ADHÉSION : le droit d'adhésion est de 2 000 FCFA et la cotisation mensuelle de
+1 000 FCFA par mois. L'adhésion se fait physiquement ou en ligne : remplir le
+formulaire d'adhésion, fournir les informations d'identification, accepter les
+Statuts et le Règlement intérieur, payer le droit d'adhésion et les
+cotisations. L'Association est à but non lucratif : aucun bénéfice n'est
+distribué aux membres.
 
 CONTACT : Zone B, Agla, Cotonou, Bénin. Email contact@e-swift.bj.
 Téléphone +229 01 55 43 14 99.
